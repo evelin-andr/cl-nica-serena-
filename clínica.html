@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Clínica Serena</title>
 </head>
 <body>
   <!--cabeçalho-->
-    <header>
-        <img src="#">
-        <h1> Clínica Serena </h1>
+  <header class="topo-fixo">
+    <div class="logo">
+        <img src="logoo.png">
+        <h1>Clínica Serena</h1>
+    </div>
+    <nav class="menu">
         <ul>
-            <li><a href="index.html">Pagina Inicial</a></li>
-            <li><a href="sobre.html">Serviços</a></li>
-            <li><a href="servicos.html">Unidades</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            </li>
+            <li><a href="#">Pagina Inicial</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Unidades</a></li>
+            <li><a href="#">Contato</a></li>
         </ul>
-        <button id="botaoEntrar">Entrar</button>
-        <button id="botaoAgendamento">Agendamentos</button>
-    </header>
+    </nav>
+    <div class="botoes">
+       <a href="#" id="botaoEntrar">Entrar</a>
+        <a href="#" id="botaoAgendamento">Agendamentos</a>
+    </div>
+</header>
 
     <!--CARROSSEL-->
     <main>
@@ -35,15 +40,18 @@
   </div>
 
   <div class="carousel-inner">
+    <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
     <div class="carousel-item active">
-      <img src="file:///C:/Users/Aluno/Downloads/Cos%E2%80%99%C3%A8%20la%20sindrome%20di%20Cotard_%20credere%20di%20essere%20morti.jpg" class="d-block w-100" alt="slide1"><!--imagem1-->
+      <img src="slide1.jpg" class="d-block w-100" alt="slide1"><!--imagem1-->
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="slide2"><!--imagem2-->
+      <img src="slide2.jpg" class="d-block w-100" alt="slide2"><!--imagem2-->
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="slide3"><!--imagem3-->
+      <img src="slide3.jpg" class="d-block w-100" alt="slide3"><!--imagem3-->
     </div>
+    
 </div>
 
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -55,67 +63,79 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div> 
+
 </main>
 
 <!--SERVIÇOS-->
-<section class="servicos" >
-   
-    <h1 id="titulo-servico"> Serviços </h1>
+<section class="servicos">
+  <h1><strong>Serviços</strong></h1>
 
-     <!--terapia individual-->
-    <div class="cards">
-      <div class="titulo-card">
-        <h2>Psicoterapia Individual</h2>
-        </div>
-      <div class="texto-card">
-       <p id="textoverde-card"><strong>Escuta, acolhimento e transformação.</strong><br></p> 
-       <p> Espaço seguro para adolescentes, adultos e idosos se reconectarem consigo mesmos.
-        Questões como ansiedade, autoestima, estresse, relacionamentos e depressão, entre outras.</p>
-      </div>
-         </div>
-  <div class="cards"><!--cardD-->
-      <img src="#" alt="individual" class="imagem-card">
-      <a href="#" class="botao-card">Marque sua Consulta</a>
-    </div>
+<!--TERAPIA INDIVIDUAL-->
+  <div class="container-cards">
+    <div class="card-servico">
 
-    <!--terapia infantil-->
-  <div class="cards">
-<div class="titulo-card">
-        <h2>Psicoterapia infantil</h2>
+      <div class="card-texto"><br>
+        <h2><strong>Psicoterapia Individual</strong></h2>
+          <br>
+         <span>Escuta, acolhimento e transformação.</span> <br> <p> Espaço seguro para adolescentes, adultos e idosos se reconectarem consigo mesmos. Trabalhamos questões como ansiedade, autoestima, estresse, relacionamentos, depressão, entre outras.</p>
         </div>
-      <div class="texto-card">
-         <p id="textoverde-card"> <strong>Cuidando da saúde emocional desde a infância</strong><br></p>
-       <p>Acolhimento lúdico e terapêutico para crianças que enfrentam dificuldades emocionais, comportamentais ou sociais. O atendimento é feito de forma leve e respeitosa, respeitando o tempo e as necessidades de cada criança.</p>
+      
+
+      <!-- CARD DE IMAGEM -->
+      <div class="card-imagem">
+        <img src="serviço1.jpg" alt="Psicoterapia Individual">
+        <a href="#" class="botao-card">Marque sua Consulta</a>
       </div>
     </div>
-  <div class="cards"><!--cardD-->
-      <img src="#" alt="infantil" class="imagem-card">
-      <a href="#" class="botao-card">Marque sua Consulta</a>
-    </div>
+     <div class="card-servico">
 
-    <!--Atendimento Psiquiátrico-->
-    <div class="cards">
-        <div class="titulo-card">
-            <h2>Atendimento Psiquiátrico</h2>
-            </div>
-        <div class="texto-card">
-         <p id="textoverde-card"><strong>Saúde mental também é cuidado médico.</strong><br></p> 
-         <p> Com uma abordagem ética e humanizada, nossa equipe de psiquiatria oferece diagnóstico, acompanhamento e prescrição medicamentosa quando necessário, em harmonia com o trabalho psicoterapêutico.</p>
+<!--TERAPIA INFANTIL-->
+      <div class="card-texto"><br>
+        <h2><strong>Psicoterapia Infantil</strong></h2>
+          <br>
+         <span>Cuidando da saúde emocional desde a infância.</span> <br>
+<p> Acolhimento lúdico e terapêutico para crianças que enfrentam dificuldades emocionais, comportamentais ou sociais. O atendimento é feito de forma leve e respeitosa, respeitando o tempo e as necessidades de cada criança. </p>
         </div>
-         <div class="cards"><!--cardD-->
-      <img src="#" alt="psiquiátrico" class="imagem-card">
-      <a href="#" class="botao-card">Marque sua Consulta</a>
+      
+
+      <!-- CARD DE IMAGEM -->
+      <div class="card-imagem">
+        <img src="serviço2.jpg" alt="Psicoterapia Infantil">
+        <a href="#" class="botao-card">Marque sua Consulta</a>
+      </div>
     </div>
-    <br> <br> 
-     <a href="#" class="vermaisservicos">Ver mais Serviços</a>
+    <!--PSIQUIATRIA-->
+    <div class="card-servico">
+
+      <div class="card-texto"><br>
+        <h2><strong>Atendimento Psiquiátrico</strong></h2>
+          <br>
+         <span>Saúde mental também é cuidado médico.</span> <br> 
+         <p>Com uma abordagem ética e humanizada, nossa equipe de psiquiatria oferece diagnóstico, acompanhamento e prescrição medicamentosa quando necessário, em harmonia com o trabalho psicoterapêutico. </p></div>
+      
+
+      <!-- CARD DE IMAGEM -->
+      <div class="card-imagem">
+        <img src="serviço3.jpg" alt="Atendimento Psiquiátrico">
+        <a href="#" class="botao-card">Marque sua Consulta</a>
+      </div>
+    </div>
+    <a href="#" class="vermais">Ver mais Serviços</a>
+  </div>
 </section>
+
+
+
 <section class="unidades">
   <h1> Unidades de Atendimento</h1>
-  <div class="unidade">
+
+  <div class="unidade-container">
+    <div id="carduni">
     <!--unidade1-->
     <h2> Fortaleza-ce</h2>
-    <img src="#" alt="clinica" class="imagem-unidade">
-      <p>
+    <img src="clínica.jpg" alt="clinica" class="imagem-unidade">
+    <p>
+<div class="info">
     <i class="bi bi-geo-alt"></i>
     <span> Endereço</span> <br>
     <span>Av. Dom Luís, 1550<br>Meireles, Fortaleza – CE</span>
@@ -130,14 +150,16 @@
         <span>Segunda à sexta das 07:30 às 18:00<br> 
               Sábado das 07:30 às 12:00 </span>
   </div>
+</div>
   <!--unidade2-->
-  <div class="unidade">
+ <div id="carduni">
     <h2> Caucaia-ce</h2>
-    <img src="#" alt="clinica" class="imagem-unidade">
+    <img src="clínica.jpg" alt="clinica" class="imagem-unidade">
       <p>
+ <div class="info">
     <i class="bi bi-geo-alt"></i>
     <span> Endereço</span> <br>
-    <span>Rua Coronel Correia, 450 –   
+    <span>Rua Coronel Correia, 450 
  <br>Centro, Caucaia – CE</span>
   </p>
   <p>
@@ -149,11 +171,14 @@
     <span> Horário de funcionamento</span> <br>
         <span>Segunda à sexta das 07:30 às 18:00<br>
             Sábado das 07:30 às 12:00 </span>
+   </div>
+</div>
  <!--unidade3-->
-<div class="unidade">
+<div id="carduni">
     <h2> Maracanaú-ce</h2>
-    <img src="#" alt="clinica" class="imagem-unidade">
+    <img src="clínica.jpg" alt="clinica" class="imagem-unidade">
       <p>
+      <div class="info">
   <i class="bi bi-geo-alt"></i> 
     <span> Endereço</span> <br>
     <span>Av. Padre José Holanda do Vale, 821<br>Jereissati I, Maracanaú – CE</span>
@@ -167,19 +192,21 @@
     <span> Horário de funcionamento</span> <br>
         <span>Segunda à sexta das 07:30 às 18:00<br>
 Sábado das 07:30 às 12:00 </span>
+       </div>
+    </div>
+ </div>
 </section>
 
 <!--RODAPÉ-->
 <footer>
   <div class="rodapé">
 
-    <h1 id="cont"> Entre em contato</h1>
-    Email: contatoclinicaserena@gmail.com <span> Tel: (85) 912345678</span>
-    <p> Endereço: Av. Central, 100- Fortaleza-Ce</p>
+    <h1> Entre em contato</h1>
+    <h4>Email: contatoclinicaserena@gmail.com <span> Tel: (85) 912345678</span></h4>
 
 <div id="hora">
-<i class="bi bi-clock-fill"> Horário de Atendimento:</i><br
- Segunda a Sexta – 08h às 18h<br>
+<i class="bi bi-clock-fill"> Horário de Atendimento:</i><br>
+ Segunda a Sexta – 08h às 18h <br>
  Sábados – 08h às 12h<br>
  Domingos – Fechado
 </div>
@@ -195,6 +222,7 @@ Sábado das 07:30 às 12:00 </span>
 
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
