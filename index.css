@@ -86,8 +86,8 @@ h1{
 
 /* CARROSSEL */
 .carousel-item img {
-  height: 600px; 
-  width: 40px;
+  height: auto; 
+  width: 100%;
   object-fit: cover;
 }
 .carousel-indicators [data-bs-target] {
@@ -318,6 +318,8 @@ footer h4 span {
 .bi {
   font-weight: bold;
 }
+
+
 @media (max-width: 758px) {
   header {
     flex-direction: column;
@@ -325,17 +327,12 @@ footer h4 span {
     padding: 20px;
   }
 
-  .menu ul {
-    flex-direction: row;
-    align-items: center;
+  .carousel-item img {
+    max-height: 250px;
   }
-
-  .menu li {
-    margin-right: 0;
-    margin-bottom: 10px;
-    
+  .servicos h1{
+    font-size: 04em;
   }
-
   .container-cards {
     flex-direction: column;
     align-items: center;
@@ -345,9 +342,12 @@ footer h4 span {
     flex-direction: column;
     align-items: center;
   }
+  .unidades h1{
+  font-size:04em;
+}
   .unidade-container{
   align-items: center;
   flex-direction: column;
+  gap: 02em;
   }
-
 }
