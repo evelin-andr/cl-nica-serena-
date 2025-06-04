@@ -10,29 +10,35 @@
     <title>Clínica Serena</title>
 </head>
 <body>
-  <!--cabeçalho-->
+<!--CABEÇALHO-->
   <header>
+<nav class="nav-bar">
     <div class="logo">
         <img src="logoo.png">
         <h1>Clínica Serena</h1>
     </div>
-    <nav class="menu">
+
+  <div class="menu-hamburguer" id="menubarrinha">
+    ☰
+  </div>
+    <div class="menu" id="navlist">
         <ul>
-            <li><a href="#">Pagina Inicial</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Unidades</a></li>
-            <li><a href="#">Contato</a></li>
+            <li class="item"><a href="#">Pagina Inicial</a></li>
+            <li class="item"><a href="#">Serviços</a></li>
+            <li class="item"><a href="#">Unidades</a></li>
+            <li class="item"><a href="#">Contato</a></li>
         </ul>
-    </nav>
-    <div class="botoes">
-       <a href="#" id="botaoEntrar">Entrar</a>
-        <a href="#" id="botaoAgendamento">Agendamentos</a>
     </div>
+
+    <div class="botoes">
+       <button id="botaoEntrar">Entrar</button>
+        <button id="botaoAgendamento">Agendamentos</button>
+    </div>
+  </nav>
 </header>
 
-    <!--CARROSSEL-->
+<!--CARROSSEL-->
     <main>
-      <div class="carrousel">
     <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,7 +50,7 @@
     <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
     <div class="carousel-item active">
-      <img src="slide1.jpg" class="d-block w-100" alt="slide1"><!--imagem1-->
+      <img src="1306926.jpeg" class="d-block w-100" alt="slide1"><!--imagem1-->
     </div>
     <div class="carousel-item">
       <img src="slide2.jpg" class="d-block w-100" alt="slide2"><!--imagem2-->
@@ -63,14 +69,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-  </div>
 </div> 
 
 </main>
 
 <!--SERVIÇOS-->
 <section class="servicos">
-  <h1>Serviços</h1>
+  <h1><strong>Serviços</strong></h1>
 
 <!--TERAPIA INDIVIDUAL-->
   <div class="container-cards">
@@ -125,9 +130,7 @@
     <a href="#" class="vermais">Ver mais Serviços</a>
   </div>
 </section>
-
-
-
+<!--UNIDADES DE ATENDIMENTO-->
 <section class="unidades">
   <h1> Unidades de Atendimento</h1>
 
@@ -225,6 +228,20 @@ Sábado das 07:30 às 12:00 </span>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  document.ElementById("botaoEntrar").addEventListener("click", function(){
+    window.location.href = "login.html";
+  });
+  document.ElementById("botaoAgendamento").addEventListener("click", function(){
+    window.location.href = "agendamento.html";
+  });
+
+  const menubarrinha = document.ElementById("menubarrinha");
+  const navlist = document.ElementById("nav-list");
+
+menubarrinha.addEventListener("click", () => {
+  navlist.classList.toggle("active"); 
+});
+
 </script>
 
 </body>
