@@ -1,33 +1,13 @@
 body{
     background-color: #fdfff7;
 }
-/*header {
-  background-color: #d8f3dc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  height: 120px;
-}*/
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+html {
+  scroll-behavior: smooth;
 }
 
-.logo img {
-    width: 120px;
-    height: 100px;
-}
-h1{
-    color: rgb(24, 30, 24);
-    font-size: 2.5rem;
-     font-family: "Poppins", sans-serif;
-   font-weight: 650g;
-  font-style: normal;    
+/*====CABEÇALHO=====*/
+header {
+  background-color: #d8f3dc;
 }
 .nav-bar {
   display: flex;
@@ -35,8 +15,31 @@ h1{
   justify-content: space-between;
   padding: 15px;
   background-color: #d8f3dc;
-  flex-wrap: wrap;
+  flex-wrap: wrap;}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+.logo h1{
+   color: rgb(67, 130, 67);
+   font-size: 2.5rem;
+   font-family: "Poppins", sans-serif, serif;
+   font-style: normal;    
+}
+
+.menu-hamburguer {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
 .menu{
   display: flex;
 }
@@ -57,10 +60,10 @@ h1{
 .menu a {
     color: #2e5b3c;
     text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.4em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4em;
     transition: 0.3s;
 }
 
@@ -72,18 +75,11 @@ h1{
     display: flex;
     gap: 10px;
 }
-.menu-hamburguer {
-display: none;
-  font-size: 30px;
-  cursor: pointer;
-  user-select: none;
-}
 
 #botaoEntrar,
 #botaoAgendamento {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #59aa7d;
     color: #ffffff;
     border-radius: 50px;
@@ -93,7 +89,7 @@ display: none;
     font-size: 20px;
     border: none;
     cursor: pointer;
-      padding: 10px 18px;
+    padding: 10px 18px;
     box-shadow: 4px 2px 5px #1e6332;
     text-decoration: none;
 }
@@ -102,57 +98,53 @@ display: none;
     color: #004600;
 }
 
-/* CARROSSEL */
+/* ====CARROSSEL====== */
 .carousel-item img {
-  height: 600px; 
-  width: 40px;
-  object-fit: cover;
+    height: 600px; 
+    width: 100%;
+    object-fit: cover;
 }
 .carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%; 
-  background-color: #6db48c; 
-  border: none;
-  margin: 0 5px;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-color: #6db48c; 
+    border: none;
+    margin: 0 5px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
 }
 
 .carousel-indicators .active {
-  opacity: 1;
-  background-color: #79b774; 
+    opacity: 1;
+    background-color: #79b774;
+     
 }
-/*SERVIÇOS*/
+/*=====SERVIÇOS=====*/
  .servicos h1{
     color:#d8c5ff;
     text-align: center;
     font-size: 80px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif, 'Times New Roman', Times, serif;
     background-color: #fdfff8;
  }
-
 .container-cards {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  gap:60px;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap:60px;
+    flex-direction: column;
  
 }
-
 .card-servico {
-  display: flex;
-  background-color: transparent;
-  border-radius: 20px;
-  gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-  
- 
+   display: flex;
+   background-color:transparent;
+   border-radius: 20px;
+   gap: 30px;
+   align-items: center;
+   flex-wrap: wrap;
 }
-
-/* Texto */
+/* ===Texto=== */
 .card-texto {
   background-color: #f0f0f0;
   padding: 30px;
@@ -163,14 +155,14 @@ display: none;
 }
 
 .card-texto h2 {
-  font-size: 55px;
-  color: #4CAF50;
-  margin-bottom: 20px;
-   font-family:DM Serif Text;
+   font-size: 55px;
+   color: #4CAF50;
+   margin-bottom: 20px;
+   font-family:DM Serif Text, 'Times New Roman', Times, serif;
 
 }
 .card-texto p{
-  font-family:Ancizar Serif;
+  font-family:Ancizar Serif, 'Times New Roman', Times, serif;
   font-size: 20px;
   text-align: justify;
 }
@@ -223,7 +215,7 @@ display: none;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  font-family:Ancizar Serif ;
+  font-family:Ancizar Serif,'Times New Roman', Times, serif ;
   align-items: center;
   width: 300px;
   height: 65px;
@@ -242,8 +234,6 @@ display: none;
     font-size: 80px;
     background-color: #fdfff8;
  }
-
-
 .unidade-container{
   display: flex;
   border-radius: 20%;
@@ -262,10 +252,11 @@ display: none;
   font-size: 35px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#carduni{
+.carduni{
   background-color:#f0f0f0 ;
   width: 400px;
   height: 600px;
+  box-shadow: 5px 11px 7px rgb(129, 154, 131);
   margin-bottom: 15px;
   margin-left: 30px;
   justify-items: center;
@@ -286,7 +277,6 @@ footer {
   font-family: Arial, sans-serif;
   color: white;
 }
-
 footer h1 {
   text-align: center;
   font-size: 40px;
@@ -324,7 +314,9 @@ footer h4 span {
 #hora {
   margin-left: 5%;
 }
-
+.carduni h2{
+  color:#d8c5ff;
+}
 #unid ul {
   list-style-type: disc;
   padding-left: 18px;
@@ -340,13 +332,12 @@ footer h4 span {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 20px;
   }
-
   .menu ul {
-    flex-direction: column;
+    flex-direction:column;
     background-color: #b6d6bb;
     padding: 10px;
   }
@@ -354,7 +345,7 @@ footer h4 span {
   .menu li {
     margin-right: 0;
     margin-bottom: 10px;
-    
+    font-size: 0.9rem;
   }
   .menubarrinha{
     display: block;
@@ -372,6 +363,9 @@ footer h4 span {
     margin-top: 10px;
     gap:20px; 
  }
+ .servicos h1{
+  font-size: 5rem;
+ }
   .container-cards {
     flex-direction: column;
     align-items: center;
@@ -380,6 +374,10 @@ footer h4 span {
   .card-servico {
     flex-direction: column;
     align-items: center;
+  }
+  .unidades h1{
+    font-size:2.5rem ;
+    
   }
   .unidade-container{
   align-items: center;
